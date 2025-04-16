@@ -1,0 +1,46 @@
+/* General Styles */ body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fefefe; color: #222; }
+
+h1, h2 { color: #113; text-align: center; }
+
+p, li { line-height: 1.6; font-size: 16px; }
+
+/* Sidebar Navigation */ .sidebar { position: fixed; top: 0; left: 0; background: #f0c808; height: 100vh; width: 220px; padding: 20px; box-shadow: 2px 0 10px rgba(0,0,0,0.1); z-index: 10; }
+
+.sidebar .hamburger { font-size: 26px; cursor: pointer; margin-bottom: 20px; }
+
+.nav-links { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px; }
+
+.nav-links a { text-decoration: none; color: #222; font-weight: bold; }
+
+.nav-links.active { display: block; }
+
+/* Layout Spacing */ section { padding: 50px 20px 30px 260px; }
+
+/* Hero Section */ .hero { background: #e7f1ff; text-align: center; padding: 80px 20px; }
+
+.hero .logo { height: 80px; margin-bottom: 10px; }
+
+.hero h1 { font-size: 36px; margin: 10px 0 5px; }
+
+.hero p { font-size: 18px; color: #444; }
+
+/* Services Section */ ul { padding-left: 20px; }
+
+/* Stats Section */ .stats { background: #fff8dc; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; font-size: 20px; font-weight: bold; }
+
+.stat-box div { background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+
+/* Gallery */ .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding-top: 20px; }
+
+.gallery-grid img { width: 100%; border-radius: 10px; border: 1px solid #ccc; }
+
+/* Form */ form { display: flex; flex-direction: column; max-width: 500px; margin: auto; gap: 15px; }
+
+input, textarea, button { padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 6px; }
+
+button { background-color: #113; color: white; border: none; cursor: pointer; }
+
+/* Footer */ footer { background: #113; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+
+/* Responsive */ @media (max-width: 768px) { .sidebar { width: 100%; height: auto; position: relative; padding: 10px; } .nav-links { flex-direction: row; justify-content: space-around; } section { padding: 20px; } }
+
